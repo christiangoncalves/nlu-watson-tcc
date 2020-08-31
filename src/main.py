@@ -1,11 +1,15 @@
 from mysql.connector import Error
 from database.connector import connect
 from database.querys import select, update
+from analise import analise
 
 if __name__== '__main__':
 	con = connect()
 
-	result = select(10, con)
+	if con:
+		result = select(1, con)
 
-	for x in result:
-		update(x[0],'salve', con)
+		for line in result:
+			result = analise(line[1])
+			print(result)
+			update(line[0], result, con)
