@@ -13,7 +13,7 @@ def connect():
 	Connect to the database and return the connection
 	'''
 	try:
-		con = mysql.connector.connect(host = env.HOST, database=env.DATABASE, user=env.USER, password = env.PASSWORD, charset = env.CHARSET)
+		con = mysql.connector.connect(host=env.HOST, database=env.DATABASE, user=env.USER, password=env.PASSWORD, charset=env.CHARSET)
 
 		if con.is_connected():
 			return con

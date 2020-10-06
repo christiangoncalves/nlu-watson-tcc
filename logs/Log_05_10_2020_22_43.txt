@@ -1,0 +1,4 @@
+log gerado em: 05_10_2020_22_43
+qtde itens do select: 1
+2.6106393337249756
+Tempo total de execucao: 2.6106393337249756
