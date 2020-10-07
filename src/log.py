@@ -8,10 +8,14 @@ class Log():
         self.file.write('log gerado em: '+self.dthr+'\n')
 
     def reOpenFile(self):
-        self.file = open(self.name, 'r')
+        self.file = open(self.name, 'a')
 
     def saveLog(self, lines):
         self.file.writelines(lines)
-
+        
     def closeFile(self):
         self.file.close()
+        
+
+
+        
